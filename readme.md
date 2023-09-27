@@ -10,7 +10,7 @@ Debemos simular un bingo que genere numeros del 1 al 75 al azar. Ademas debera g
 Teniendo un BingoCaller, cuando llamemos a un numero, este debe estar dentro del rango del 1 al 75 inclusive.
 
 ### 2) Segundo caso de prueba:
-Si llamamos un numero 75 veces, todos los numeros del 1 al 75 deben estar presentes.
+Si llamamos un numero 75 veces, todos los numeros del 1 al 75 deben estar presentes. Cada vez que llamamos un numero este debe ser aleatorio.
 
 
 # Respuestas a las preguntas:

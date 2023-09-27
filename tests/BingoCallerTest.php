@@ -25,6 +25,7 @@ class BingoCallerTest extends TestCase
             $calledNumbers[] = $caller->callNumber();
         }
 
+        sort(array:$calledNumbers);
         $this->assertEquals($expectedNumbers, $calledNumbers);
 
         
