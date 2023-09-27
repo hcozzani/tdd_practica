@@ -15,5 +15,13 @@ Si llamamos un numero 75 veces, todos los numeros del 1 al 75 deben estar presen
 ### 3) Tercer caso de prueba:
 Generar los cartones del bingo. El carton debe tener 25 espacios unicos, cada columna dentro de la tarjeta debe respetar un valor minimo y un valor maximo... ademas de contar con un espacio libre en el medio.
 
+|Columnas| Minimo | Maximo |
+| - | -- | -- |
+| B |  1 | 15 |
+| I | 16 | 30 |
+| N | 31 | 45 |
+| G | 45 | 60 |
+| O | 61 | 75 |
+
 
 # Respuestas a las preguntas:

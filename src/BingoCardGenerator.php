@@ -5,7 +5,7 @@ use Models\Card;
 
 class BingoCardGenerator
 {
- private $card = [
+ private $grid = [
     'B'=>[],
     'I'=>[],
     'N'=>[],
@@ -15,8 +15,31 @@ class BingoCardGenerator
 
  public function generate(): Card
  {
-    return new Card($this->card);
+   #generamos numeros para las 5 columnas
+   $this->grid['B'] = $this-> generateColumnWithBoundaries(1,15);
+   $this->grid['B'] = $this-> generateColumnWithBoundaries(16,30);
+   $this->grid['B'] = $this-> generateColumnWithBoundaries(31,45);
+   $this->grid['B'] = $this-> generateColumnWithBoundaries(46,60);
+   $this->grid['B'] = $this-> generateColumnWithBoundaries(61,75);
+    return new Card($this->grid);
  }
+
+ #genera columnas que contiene los numeros
+ public function generateColumnWithBoundaries($min, $max)
+ {
+   $column =[];
+
+   while(sizeof($column) < 5){
+      $number = rand($min, $max);
+      if (!in_array($number, $column)){
+         $column[] = $number;
+      }
+   }
+   return $column;
+ }
+
+
+
 }
 
 ?>
