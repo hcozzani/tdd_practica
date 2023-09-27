@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'src\\' => array($baseDir . '/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'Models\\' => array($baseDir . '/src/Models'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

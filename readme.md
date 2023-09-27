@@ -12,5 +12,8 @@ Teniendo un BingoCaller, cuando llamemos a un numero, este debe estar dentro del
 ### 2) Segundo caso de prueba:
 Si llamamos un numero 75 veces, todos los numeros del 1 al 75 deben estar presentes. Cada vez que llamamos un numero este debe ser aleatorio.
 
+### 3) Tercer caso de prueba:
+Generar los cartones del bingo. El carton debe tener 25 espacios unicos, cada columna dentro de la tarjeta debe respetar un valor minimo y un valor maximo... ademas de contar con un espacio libre en el medio.
+
 
 # Respuestas a las preguntas:

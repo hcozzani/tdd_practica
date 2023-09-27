@@ -20,3 +20,5 @@ class BingoCaller
         return $number;
     }
 }
+
+?>
