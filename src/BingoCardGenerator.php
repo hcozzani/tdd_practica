@@ -1,7 +1,7 @@
 <?php
 
 namespace src;
-use Models\Card;
+use src\Card;
 
 class BingoCardGenerator
 {
@@ -21,6 +21,10 @@ class BingoCardGenerator
    $this->grid['B'] = $this-> generateColumnWithBoundaries(31,45);
    $this->grid['B'] = $this-> generateColumnWithBoundaries(46,60);
    $this->grid['B'] = $this-> generateColumnWithBoundaries(61,75);
+
+   #generamos el espacio libre en el medio del carton
+   $this->grid['N'][2] = null;
+   
     return new Card($this->grid);
  }
 
@@ -37,9 +41,6 @@ class BingoCardGenerator
    }
    return $column;
  }
-
-
-
 }
 
 ?>

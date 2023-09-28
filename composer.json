@@ -4,8 +4,7 @@
     },
     "autoload": {
         "psr-4": {
-            "src\\": "src/",
-            "Models\\": "src/Models"
+            "src\\": "src/"
         }
     }
 }
